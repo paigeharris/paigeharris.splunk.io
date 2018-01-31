@@ -6,8 +6,7 @@ const Header = () => (
   <h1 className="name">Blake Harris</h1>
   <header>
     <ul className="main-nav">
-      <li><NavLink exact to="/">Home</NavLink></li>
-      <li><NavLink to="/about">About Me</NavLink></li>
+      <li><NavLink to="/">About Me</NavLink></li>
       <li><NavLink to="/skills">Skills</NavLink></li>
       <li><NavLink to="/projects">Projects</NavLink></li>
       <li><NavLink to="/contact">Contact</NavLink></li>
