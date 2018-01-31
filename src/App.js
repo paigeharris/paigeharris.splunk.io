@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Route, Redirect
 } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ import Projects from './Projects.js';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter >
         <div className="container">
           <Header />
           <Route exact path="/" component={Home}/>
@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/contact" component={Contact}/>
 
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
