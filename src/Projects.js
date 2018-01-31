@@ -20,6 +20,7 @@ const Projects = (props) => {
   return (
     <div>
     <h1>Projects</h1>
+    <h2>Oh no</h2>
     {projects}
     </div>
   )
