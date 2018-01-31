@@ -17,11 +17,11 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Header />
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/projects" component={Projects}/>
-          <Route path="/project/:page" component={Project}/>
-          <Route path="/contact" component={Contact}/>
+          <Route exact path="/portfolio" component={Home}/>
+          <Route path="/portfolio/about" component={About}/>
+          <Route path="/portfolio/projects" component={Projects}/>
+          <Route path="/portfolio/project/:page" component={Project}/>
+          <Route path="/portfolio/contact" component={Contact}/>
 
         </div>
       </BrowserRouter>
