@@ -21,6 +21,8 @@ const Projects = (props) => {
     <div>
     <h1>Projects</h1>
     <h2>Oh no</h2>
+    <h2>yo go</h2>
+    <h2>fo lo</h2>
     {projects}
     </div>
   )
