@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Rammetto+One);
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,9 @@ body {
   background: #fff;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+}
+h1.name {
+  font-family: 'Rammetto One', cursive;
 }
 h1,
 h2,
