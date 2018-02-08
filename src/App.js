@@ -6,10 +6,10 @@ import {
 
 import Header from './Header.js';
 import Contact from './Contact.js';
-import About from './About.js';
-import Project from './Project.js';
 import Projects from './Projects.js';
+import Project from './Project.js';
 import Skills from './Skills.js';
+import About from './About.js';
 
 class App extends Component {
   render() {
@@ -17,8 +17,8 @@ class App extends Component {
       <HashRouter >
         <div className="container">
           <Header />
-          <Route exact path="/" component={About}/>
-          <Route path="/projects" component={Projects}/>
+          <Route exact path="/" component={Projects}/>
+          <Route path="/about" component={About}/>
           <Route path="/project/:page" component={Project}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/skills" component={Skills}/>
