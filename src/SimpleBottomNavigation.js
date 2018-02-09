@@ -11,7 +11,7 @@ import {NavLink} from 'react-router-dom';
 
 const styles = {
   root: {
-    width: 300,
+    width: 400,
   },
 };
 
@@ -27,19 +27,19 @@ class SimpleBottomNavigation extends React.Component {
   render() {
     return (
       <div className="phone-nav">
-        <NavLink exact to="/">
+        <NavLink exact to="/" className="phone-a">
           <BottomNavigationAction label="Projects" icon={<CodeIcon />} />
         </NavLink>
 
-        <NavLink to="/skills">
+        <NavLink to="/skills" className="phone-a">
           <BottomNavigationAction label="Skills" icon={<FavoriteIcon />} />
         </NavLink>
 
-        <NavLink to="/about">
+        <NavLink to="/about" className="phone-a">
           <BottomNavigationAction label="About" icon={<FaceIcon />} />
         </NavLink>
 
-        <NavLink to="/contact">
+        <NavLink to="/contact" className="phone-a">
           <BottomNavigationAction label="Contact" icon={<CallIcon />} />
         </NavLink>
 

@@ -222,22 +222,34 @@ Small Media Query
   }
 
   .phone-nav{
+    width: 100%;
     display: flex;
     margin: 0;
     margin-top: 1em;
-    margin-left: -.8em;
-    width: 90%;
   }
 
-  .phone-nav button{
-    width: 33%;
-    padding-left: 1px !important;
-    padding-right: 1px !important;
-    padding-bottom: 10px !important;
+
+
+
+  .phone-a {
+    width: 25% !important;
+  }
+
+  .phone-a button{
+    width: 75px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
 
   .phone-nav button span{
     opacity: 1 !important;
+    min-width: 75px !important;
+  }
+
+  .phone-nav button {
+    min-width: 75px !important;
   }
 
 
