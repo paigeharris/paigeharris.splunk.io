@@ -3,6 +3,9 @@ import React from 'react';
 const Skills = () => {
   return(
     <div className="main-content">
+
+      <span className="topspan">My Skills Mosaic</span>
+
       <br></br>
       <br></br>
       <br></br>
@@ -40,14 +43,10 @@ const Skills = () => {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+
+        <br></br>
+          <br></br>
+          <br></br>
     </div>
   )
 };

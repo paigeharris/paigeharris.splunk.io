@@ -84,7 +84,7 @@ const Projects = (props) => {
 
   return (
     <div className="main-content">
-      <span className="topspan">Full Stack Web Developer Specialising In React, Angular, Node, And Rails</span>
+      <span className="topspan">My Projects</span>
     <div className="projects">
     {projects}
   </div>

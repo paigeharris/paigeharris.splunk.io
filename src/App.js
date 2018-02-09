@@ -10,6 +10,8 @@ import Projects from './Projects.js';
 import Project from './Project.js';
 import Skills from './Skills.js';
 import About from './About.js';
+import SimpleMenu from './SimpleMenu.js';
+import SimpleBottomNavigation from './SimpleBottomNavigation.js';
 
 class App extends Component {
   render() {
@@ -17,6 +19,9 @@ class App extends Component {
       <HashRouter >
         <div className="container">
           <Header />
+          <SimpleMenu />
+          <h1 className="phonename">Blake Harris</h1>
+          <SimpleBottomNavigation />
           <Route exact path="/" component={Projects}/>
           <Route path="/about" component={About}/>
           <Route path="/project/:page" component={Project}/>

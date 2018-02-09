@@ -1,24 +1,59 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
+import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
-const Project = (props) => {
+const styles = {
+  card: {
+    maxWidth: 1000,
+  },
+  media: {
+    height: 400,
+  },
+};
+
+function Project(props) {
   const project = props.project;
-  return(
+  const { classes } = props;
+  return (
     <div className="project">
-      <a  href={project.live_link} target="_blank">
-      <img src={project.img} alt="Project Img"/>
-      </a>
-      <div className="hide">
-        <h1 className="projecth1">{project.name}</h1>
-        <h2><strong>Roles: </strong>{project.roles}</h2>
-        <h2 >{project.desc}</h2>
-        {project.backend_link &&
-          <div className="backend_links">
-              <h3>{project.backend_link}</h3>
-          </div>
-        }
-      </div>
-      </div>
-  )
+      <Card className={classes.card+" cardpaper"}>
+        <CardMedia
+          className={classes.media+" cardmedia"}
+          image={project.img}
+          title={project.name}
+        />
+        <CardContent>
+          <Typography variant="headline" component="h2">
+            {project.name}
+          </Typography>
+          <Typography component="p">
+            {project.desc}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <a href={project.live_link} target="_blank">
+          <Button size="small" color="primary">
+            Live Site
+          </Button>
+          </a>
+
+          <a href={project.live_repo} target="_blank">
+          <Button size="small" color="primary">
+            Github Repo
+          </Button>
+          </a>
+
+        </CardActions>
+      </Card>
+    </div>
+  );
 }
 
-export default Project;
+Project.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Project);
