@@ -348,7 +348,7 @@ Projects
 }
 
 .cardmedia{
-  background-position: top;
+  background-position: top !important;
 }
 
 .projectbuttons{
@@ -366,7 +366,7 @@ Projects
 
   .cardmedia{
     height: 260px !important;
-    background-position: top;
+    background-position: top !important;
     background-size: 40%;
   }
 
