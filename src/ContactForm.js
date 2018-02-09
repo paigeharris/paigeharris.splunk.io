@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
@@ -33,19 +33,48 @@ const styles = theme => ({
 });
 
 
-class ContactForm extends React.Component {
-  state = {
-    name: '',
-    phone: '',
-    multiline: ''
-  };
+class ContactForm extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+        name: '',
+        email:'',
+        number: '',
+        message: '',
+        emailed:false
+      };
+  }
+
+
 
   handleChange = name => event => {
     this.setState({
       [name]: event.target.value,
     });
-    console.log(this.state);
   };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    const newemail  = {
+              name   : this.state.name,
+              email  : this.state.email,
+              number : this.state.number,
+              message : this.state.message
+          }
+          
+    fetch('https://blakeharris-api.herokuapp.com/email', {
+            method:"Post",
+            headers:{
+              'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(newemail)
+          });
+
+  }
+
+
 
   render() {
     const { classes } = this.props;
@@ -57,7 +86,7 @@ class ContactForm extends React.Component {
         </Typography>
         <br></br>
 
-          <form className={classes.container +" messageForm"} noValidate autoComplete="off">
+          <form className={classes.container +" messageForm"} noValidate autoComplete="off" onSubmit={(e)=>this.handleSubmit(e)}>
             <TextField
               id="name"
               label="Name"
@@ -71,9 +100,9 @@ class ContactForm extends React.Component {
             <TextField
               id="number"
               label="Phone Number"
-              value={this.state.phone}
+              value={this.state.number}
               placeholder="303 618 5741"
-              onChange={this.handleChange('phone')}
+              onChange={this.handleChange('number')}
               type="text"
               className={classes.textField + " contactField"}
               margin="normal"
@@ -101,7 +130,7 @@ class ContactForm extends React.Component {
                 margin="normal"
               />
 
-              <Button className={classes.button} variant="raised" color="primary">
+            <Button className={classes.button} variant="raised" color="primary" type="submit" onClick={(e)=>this.handleSubmit(e)}>
                 <SendIcon />
               </Button>
 
