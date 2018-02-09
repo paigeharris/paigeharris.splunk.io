@@ -162,9 +162,8 @@ Nav
   padding: 10px;
 }
 
-.phone-nav{
-  display: block;
-  margin: auto;
+.desktop-nav{
+
 }
 /* ===============================
 End Nav
@@ -183,8 +182,26 @@ Small Media Query
     position: fixed;
     top: 30px;
     left: -7px;
-
   }
+
+  .phone-nav{
+    display: flex;
+    margin: 0;
+    margin-top: 1em;
+    width: 90%;
+  }
+
+  .phone-nav button{
+    width: 33%;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .phone-nav button span{
+    opacity: 1 !important;
+  }
+
 
   .burgermenu button span{
     color: black;
@@ -214,6 +231,10 @@ End Small Media Query
 Big Media Query
 ================================== */
 @media (min-width: 769px) {
+
+  .phone-nav{
+    display: none !important;
+  }
 
   body {
     padding-top: 3em;

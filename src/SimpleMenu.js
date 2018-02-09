@@ -35,7 +35,7 @@ class SimpleMenu extends React.Component {
           onClose={this.handleClose}
         >
 
-        <Link exact to="/">
+        <Link to="/">
           <MenuItem onClick={this.handleClose}>
             <span>Projects</span>
         </MenuItem>
