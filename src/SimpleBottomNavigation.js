@@ -36,11 +36,11 @@ class SimpleBottomNavigation extends React.Component {
         </NavLink>
 
         <NavLink to="/about">
-          <BottomNavigationAction label="About Me" icon={<FaceIcon />} />
+          <BottomNavigationAction label="About" icon={<FaceIcon />} />
         </NavLink>
 
         <NavLink to="/contact">
-          <BottomNavigationAction label="Contact Me" icon={<CallIcon />} />
+          <BottomNavigationAction label="Contact" icon={<CallIcon />} />
         </NavLink>
 
         </div>
