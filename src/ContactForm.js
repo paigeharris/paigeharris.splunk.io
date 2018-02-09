@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
+import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
+import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import SendIcon from 'material-ui-icons/Send';
 
@@ -49,55 +51,66 @@ class ContactForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <form className={classes.container +" messageForm"} noValidate autoComplete="off">
-        <TextField
-          id="name"
-          label="Name"
-          className={classes.textField}
-          value={this.state.name}
-          placeholder="Your Name"
-          onChange={this.handleChange('name')}
-          margin="normal"
-        />
+      <Paper className="contactPaper" elevation={5}>
+        <Typography variant="headline" component="h1">
+          Contact Me
+        </Typography>
+        <br></br>
 
-        <TextField
-          id="number"
-          label="Phone Number"
-          value={this.state.phone}
-          placeholder="303 618 5741"
-          onChange={this.handleChange('phone')}
-          type="text"
-          className={classes.textField}
-          margin="normal"
-        />
+          <form className={classes.container +" messageForm"} noValidate autoComplete="off">
+            <TextField
+              id="name"
+              label="Name"
+              className={classes.textField + " contactField"}
+              value={this.state.name}
+              placeholder="Your Name"
+              onChange={this.handleChange('name')}
+              margin="normal"
+            />
 
-        <TextField
-            id="email"
-            label="Email"
-            value={this.state.email}
-            onChange={this.handleChange('email')}
-            placeholder="example@email.com"
-            className={classes.textField}
-            margin="normal"
-          />
+            <TextField
+              id="number"
+              label="Phone Number"
+              value={this.state.phone}
+              placeholder="303 618 5741"
+              onChange={this.handleChange('phone')}
+              type="text"
+              className={classes.textField + " contactField"}
+              margin="normal"
+            />
 
-          <TextField
-            id="message"
-            label="Message"
-            multiline
-            rowsMax="5"
-            value={this.state.message}
-            placeholder="Your multi-line message"
-            onChange={this.handleChange('message')}
-            className={classes.textField}
-            margin="normal"
-          />
+            <TextField
+                id="email"
+                label="Email"
+                value={this.state.email}
+                onChange={this.handleChange('email')}
+                placeholder="example@email.com"
+                className={classes.textField + " contactField"}
+                margin="normal"
+              />
 
-          <Button className={classes.button} variant="raised" color="primary">
-            <SendIcon />
-          </Button>
+              <TextField
+                id="message"
+                label="Message"
+                multiline
+                rowsMax="5"
+                value={this.state.message}
+                placeholder="Your multi-line message"
+                onChange={this.handleChange('message')}
+                className={classes.textField + " contactField"}
+                margin="normal"
+              />
 
-      </form>
+              <Button className={classes.button} variant="raised" color="primary">
+                <SendIcon />
+              </Button>
+
+          </form>
+
+
+
+      </Paper>
+
     );
   }
 }

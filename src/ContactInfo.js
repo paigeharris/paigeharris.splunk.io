@@ -14,7 +14,7 @@ const styles = theme => ({
 });
 
 function ContactInfo(props) {
-  
+
   return (
       <Paper className="contactPaper" elevation={5}>
         <Typography variant="headline" component="h1">
@@ -24,21 +24,21 @@ function ContactInfo(props) {
         <form className="messageForm" noValidate autoComplete="off">
           <TextField
             label="Name"
-            className="infoForm"
+            className="infoField"
             value="Blake Harris"
             margin="normal"
           />
 
           <TextField
             label="Phone Number"
-            className="infoForm"
+            className="infoField"
             value="303-618-5741"
             margin="normal"
           />
 
           <TextField
             label="Email"
-            className="infoForm"
+            className="infoField"
             value="harrisblake85@gmail.com"
             margin="normal"
           />

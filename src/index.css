@@ -108,6 +108,7 @@ Contact
 .messageForm button {
   margin: auto;
   display: block;
+  margin-top: 1em;
 }
 
 .contactPaper{
@@ -115,8 +116,10 @@ Contact
   margin: auto;
   width: 50%;
 }
-
-.infoForm{
+.contactField{
+  width: 90% !important;
+}
+.infoField{
   width: 90%;
 }
 
@@ -129,7 +132,7 @@ Contact
     width: 100%;
   }
 
-  .infoForm {
+  .infoField {
     width: 90%;
   }
 }
