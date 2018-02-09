@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'material-ui/Button';
 import Menu, { MenuItem } from 'material-ui/Menu';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 class SimpleMenu extends React.Component {
   state = {
@@ -35,27 +35,27 @@ class SimpleMenu extends React.Component {
           onClose={this.handleClose}
         >
 
-        <Link to="/">
+        <NavLink exact to="/">
           <MenuItem onClick={this.handleClose}>
             <span>Projects</span>
         </MenuItem>
-        </Link>
+        </NavLink>
 
-        <Link to="/skills">
+        <NavLink to="/skills">
           <MenuItem onClick={this.handleClose}>
             <span>Skills</span>
           </MenuItem>
-          </Link>
-          <Link to="/about">
+          </NavLink>
+          <NavLink to="/about">
           <MenuItem onClick={this.handleClose}>
             <span>About Me</span>
           </MenuItem>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact">
           <MenuItem onClick={this.handleClose}>
             <span>Contact</span>
           </MenuItem>
-          </Link>
+          </NavLink>
         </Menu>
       </div>
     );

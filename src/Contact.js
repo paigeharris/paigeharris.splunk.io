@@ -1,33 +1,13 @@
 import React from 'react';
 import ContactForm from './ContactForm.js';
-
+import ContactInfo from './ContactInfo.js';
 const Contact = () => {
   return(
     <div className="main-content">
-      <span className="topspan">Reach Out!</span>
-
+      <span className="topspan">Send Me A Message!</span>
       <ContactForm/>
-
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-          <br></br>
-          <br></br>
+      <span className="topspan">Or</span>
+      <ContactInfo/>
 
     </div>
   )
