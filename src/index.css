@@ -236,7 +236,6 @@ Small Media Query
   }
 
   .phone-a button{
-    width: 75px !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-left: 0px !important;
@@ -244,12 +243,14 @@ Small Media Query
   }
 
   .phone-nav button span{
+    width: 100%;
     opacity: 1 !important;
-    min-width: 75px !important;
+    min-width: 50px !important;
   }
 
   .phone-nav button {
-    min-width: 75px !important;
+    width: 100%;
+    min-width: 50px !important;
   }
 
 
