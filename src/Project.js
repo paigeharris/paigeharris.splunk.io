@@ -33,7 +33,7 @@ function Project(props) {
             {project.desc}
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions className="projectbuttons">
           <a href={project.live_link} target="_blank">
           <Button size="small" color="primary">
             Live Site
