@@ -111,11 +111,27 @@ Contact
 }
 
 .contactPaper{
-  width: 100%;
+  padding: 1em;
+  margin: auto;
+  width: 50%;
 }
 
 .infoForm{
-  width: 30%;
+  width: 90%;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+
+  .topspan{
+    font-size: 2em;
+  }
+  .contactPaper{
+    width: 100%;
+  }
+
+  .infoForm {
+    width: 90%;
+  }
 }
 /* ===============================
 End Contact
@@ -352,18 +368,17 @@ End Projects
 Skills
 ================================== */
 .mosaic{
-  width: 95%;
+  width: 100%;
   display: block;
   margin: auto;
 }
 
 
-@media (min-width: 769px) {
 
-
-}
 @media (min-width: 0) and (max-width: 768px) {
-
+  .mosaic{
+    height: 280px;
+  }
 }
 /* ===============================
 End Skills

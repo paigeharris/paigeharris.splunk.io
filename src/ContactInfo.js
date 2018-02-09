@@ -14,7 +14,7 @@ const styles = theme => ({
 });
 
 function ContactInfo(props) {
-  const { classes } = props;
+  
   return (
       <Paper className="contactPaper" elevation={5}>
         <Typography variant="headline" component="h1">
