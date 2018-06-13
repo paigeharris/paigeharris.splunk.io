@@ -63,7 +63,7 @@ class ContactForm extends Component {
               number : this.state.number,
               message : this.state.message
           }
-          
+
     fetch('https://blakeharris-api.herokuapp.com/email', {
             method:"Post",
             headers:{
@@ -71,6 +71,10 @@ class ContactForm extends Component {
             },
             body:JSON.stringify(newemail)
           });
+        this.state.name = "";
+        this.state.email= "";
+        this.state.number= "";
+        this.state.message= "";
 
   }
 
