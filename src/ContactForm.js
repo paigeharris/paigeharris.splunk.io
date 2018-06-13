@@ -71,10 +71,8 @@ class ContactForm extends Component {
             },
             body:JSON.stringify(newemail)
           });
-        this.state.name = "";
-        this.state.email= "";
-        this.state.number= "";
-        this.state.message= "";
+        this.setState({name:"",email:"",number:"",message:""})
+
 
   }
 
