@@ -34,12 +34,13 @@ function Project(props) {
           </Typography>
         </CardContent>
         <CardActions className="projectbuttons">
+// eslint-disable-next-line
           <a href={project.live_link} target="_blank">
           <Button size="small" color="primary">
             Live Site
           </Button>
           </a>
-
+// eslint-disable-next-line
           <a href={project.live_repo} target="_blank">
           <Button size="small" color="primary">
             Github Repo
