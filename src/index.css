@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Rammetto+One);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+/* ===============================
+Overall
+================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.25em;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 2em;
+  background-color: black;
+  color: rgba(0,0,0,.4);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+h1.name {
+  font-family: 'Rammetto One', cursive;
+  color: #657eff;
+}
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  color: #404040;
+  font-size: 1.6em;
+  margin-bottom: 1.25em;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #3b80d1;
+}
+
+.container {
+  width: 95%;
+  height: 95%;
+  max-width: 960px;
+  padding-bottom: 2em;
+  margin: 0 auto 2em;
+  border-radius: .5em;
+  box-shadow: 0 3px rgba(0,0,0, .1);
+  background: black;
+  overflow: hidden;
+  padding: 1em;
+  background-color: white;
+}
+header {
+}
+.main-content {
+  font-family: 'Roboto', sans-serif;
+  width: 98%;
+  margin: auto;
+  padding: 1em;
+  padding-top: 0em;
+}
+.topspan{
+  color: #657eff;
+  display: block;
+  font-family: 'Muli', sans-serif;
+  font-size: 3.125vw;
+  font-weight: 800;
+  height: auto;
+  letter-spacing: normal;
+  line-height:60.9875px;
+  text-align:center;
+  text-rendering:optimizeLegibility;
+  text-transform:none;
+  visibility:visible;
+  width:auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* ===============================
+End Overall
+================================== */
+
+/* ===============================
+About Me
+================================== */
+.aboutme{
+  text-align: center;
+}
+/* ===============================
+End About Me
+================================== */
+/* ===============================
+Contact
+================================== */
+.messageForm{
+  width: 100%;
+}
+.messageForm button {
+  margin: auto;
+  display: block;
+  margin-top: 1em;
+}
+
+.contactPaper{
+  padding: 1em;
+  margin: auto;
+  width: 50%;
+}
+.contactField{
+  width: 90% !important;
+}
+.infoField{
+  width: 90%;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+
+  .topspan{
+    font-size: 2em;
+  }
+  .contactPaper{
+    width: 100%;
+  }
+
+  .infoField {
+    width: 90%;
+  }
+}
+/* ===============================
+End Contact
+================================== */
+
+/* ===============================
+Nav
+================================== */
+
+
+.main-nav a {
+  font-size: .95em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  transition: .2s;
+}
+.main-nav a span {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: .04em;
+  text-transform: none;
+  line-height: 1em;
+}
+
+.phone-nav .active span{
+  color: #657eff;
+}
+
+.main-nav a:hover ,
+.main-nav .active {
+  color: #657eff;
+}
+
+.phonename{
+  display: none;
+}
+.desktop{
+  display: none;
+}
+
+.burgermenu {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: -15px;
+}
+
+.burgermenu button span{
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.desktop-nav{
+
+}
+/* ===============================
+End Nav
+================================== */
+
+/* ===============================
+Small Media Query
+================================== */
+@media (min-width: 0) and (max-width: 768px) {
+  .phonename{
+    display: block;
+  }
+  .burgermenu {
+    color:black;
+    display: block;
+    position: fixed;
+    top: 30px;
+    left: -7px;
+  }
+
+  .burgermenu button span{
+    color: black;
+    font-size: 2em;
+    padding: 10px;
+  }
+
+  .phone-nav{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin-top: 1em;
+  }
+
+
+
+
+  .phone-a {
+    width: 25% !important;
+  }
+
+  .phone-a button{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .phone-nav button span{
+    width: 100%;
+    opacity: 1 !important;
+    min-width: 50px !important;
+  }
+
+  .phone-nav button {
+    width: 100%;
+    min-width: 50px !important;
+  }
+
+
+
+
+  body {
+    padding-top: .8em;
+  }
+  header{
+    background: black;
+  }
+  .main-nav a {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+  .main-nav a:hover {
+    border-color: rgba(0,0,0, .1);
+  }
+}
+/* ===============================
+End Small Media Query
+================================== */
+
+/* ===============================
+Big Media Query
+================================== */
+@media (min-width: 769px) {
+
+  .phone-nav{
+    display: none !important;
+  }
+
+  body {
+    padding-top: 3em;
+  }
+  .media img,
+  .media > div,
+  .media > div {
+    width: 85.1%;
+    margin-left: 1.5em;
+  }
+
+  header,
+  .main-nav {
+    width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: black;
+    border-radius: 1em;
+  }
+  .main-nav{
+    margin: auto;
+    padding: 1em;
+  }
+  .main-nav h1{
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main-nav a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+
+  .main-nav a span{
+    font-size: 1.4em;
+    font-weight: 800;
+  }
+  .main-nav a:hover {
+    /* border-color: rgba(0,0,0, .1); */
+  }
+}
+/* ===============================
+End Big Media Query
+================================== */
+
+/* ===============================
+Projects
+================================== */
+
+.projects{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 46%;
+  margin: 1em;
+}
+
+
+.mainh1{
+  padding: .5em;
+
+}
+.projecth1{
+
+}
+
+.cardpaper{
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 3px 1px -2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.cardmedia{
+  background-position: top !important;
+}
+
+.projectbuttons{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .project{
+    width: 100%;
+    margin: 0em;
+    margin-bottom: 2em;
+  }
+
+  .cardmedia{
+    height: 260px !important;
+    background-position: top !important;
+    background-size: 40%;
+  }
+
+
+}
+/* ===============================
+End Projects
+================================== */
+
+
+/* ===============================
+Skills
+================================== */
+.mosaic{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+
+
+@media (min-width: 0) and (max-width: 768px) {
+  .mosaic{
+    height: 280px;
+  }
+}
+/* ===============================
+End Skills
+================================== */
